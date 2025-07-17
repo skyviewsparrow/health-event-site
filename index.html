@@ -192,47 +192,6 @@
 <p class="p2"><span class="s1"></span><br></p>
 <p class="p1"><span class="s1">System: ### Instructions for Adding a QR Code with Your Specific URL</span></p>
 <p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">1. **Host the Website First**:</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>- Follow the steps from the previous response to host your website (e.g., using GitHub Pages, Netlify, or another service). Once hosted, you’ll get a live URL (e.g., `https://yourusername.github.io/health-event-site` or `https://your-site-name.netlify.app`).</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">2. **Generate a QR Code**:</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>- Use an online QR code generator like:</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>- [QR Code Monkey](https://www.qrcode-monkey.com)</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>- [QR Code Generator](https://www.qr-code-generator.com)</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>- [GoQR.me](https://goqr.me)</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>- Enter your website’s live URL in the generator.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>- Customize the QR code if desired (e.g., add a logo or change colors to match the event theme, like blue to match the website’s `#007bff`).</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>- Download the QR code as a PNG or JPG file.</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">3. **Update the HTML with the QR Code**:</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>- **Option 1: Embed the QR Code Image**:</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>- Upload the downloaded QR code image to your hosting service in the same directory as your `index.html` (e.g., create an `images` folder and upload `qr-code.png`).</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>- Modify the `&lt;img&gt;` tag in the footer to reference the image:</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>```html</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>&lt;img src="images/qr-code.png" alt="QR code to event page"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>```</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>- If using GitHub Pages or Netlify, ensure the image is uploaded to the repository or project folder.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>- **Option 2: Use a Base64-Encoded QR Code**:</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>- Convert your QR code image to a base64 string using a tool like [Base64 Image Encoder](https://www.base64-image.de).</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>- Replace the `&lt;img&gt;` tag’s `src` in the footer with the base64 string, like in the provided HTML:</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>```html</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>&lt;img src="data:image/png;base64,[your-base64-string]" alt="QR code to event page"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>```</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>- This avoids hosting an external image file but increases the HTML file size slightly.</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">4. **Test the QR Code**:</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>- Save the updated `index.html` and upload it to your hosting service.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>- Open the website in a browser to ensure the QR code displays correctly.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>- Scan the QR code with a smartphone to verify it directs to the correct URL.</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">5. **Use the QR Code on the Flyer**:</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>- Download the QR code image from the generator or extract it from the website.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>- Add it to your event flyer design (e.g., in Canva, Adobe Express, or a similar tool).</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>- Include a caption like “Scan to visit our event page!” to clarify its purpose.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>- Ensure the QR code is large enough (at least 1–2 inches in print) for easy scanning.</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">### Notes</span></p>
-<p class="p1"><span class="s1">- The QR code in the provided HTML links to `https://example.com/health-event`. Replace the `src` attribute with your actual QR code (either a hosted image or base64 string) once you have the live URL.</span></p>
-<p class="p1"><span class="s1">- If you need help generating a QR code for a specific URL or integrating it into a flyer design, let me know, and I can provide a sample flyer in LaTeX or further assistance!</span></p>
+<p class="p1"><span class="s1">1</span></p>
 </body>
 </html>
